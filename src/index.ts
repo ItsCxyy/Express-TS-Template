@@ -1,5 +1,4 @@
 import express, { Application } from "express";
-import mongoose, { Connection } from "mongoose";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import helmet from "helmet";
