@@ -8,7 +8,7 @@ const router: Router = Router();
 router.get("/", (req: Request, res: Response): void => {
   res.status(200).json({
     status: "ok",
-    version: config.version
+    version: config.VERSION
   });
 });
 

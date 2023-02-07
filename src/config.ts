@@ -1,15 +1,14 @@
-import dotenv from "dotenv";
+import "dotenv/config";
+
 import { Config } from "./interfaces";
 
-dotenv.config();
-
 export const config: Config = {
-  server_port: 4000,
-  version: "1.0.0",
-  prefix: "My Server »",
-  db_host: process.env.DB_HOST,
-  db_user: process.env.DB_USER,
-  db_password: process.env.DB_PASSWORD,
-  db_database: process.env.DB_DATABASE,
-  db_collection: process.env.DB_PLAYERS_COLLECTION,
+  PORT: 4000,
+  VERSION: "1.0.0",
+  PREFIX: "My Server »",
+  DB_HOST: process.env.DB_HOST,
+  DB_USER: process.env.DB_USER,
+  DB_PASSWORD: process.env.DB_PASSWORD,
+  DB_NAME: process.env.DB_DATABASE,
+  DB_COLLECTION: process.env.DB_PLAYERS_COLLECTION,
 };

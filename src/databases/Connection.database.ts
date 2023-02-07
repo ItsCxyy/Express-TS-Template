@@ -5,9 +5,9 @@ import { config } from "../config";
 export const initDatabaseSetup = async (): Promise<void> => {
   const connectOptions: ConnectOptions = {
     bufferCommands: false,
-    user: config.db_user,
-    pass: config.db_password,
-    dbName: config.db_database,
+    user: config.DB_USER,
+    pass: config.DB_PASSWORD,
+    dbName: config.DB_NAME,
     autoIndex: true,
     maxPoolSize: 5,
     minPoolSize: 2,
@@ -17,7 +17,7 @@ export const initDatabaseSetup = async (): Promise<void> => {
 
   try {
     console.log("💻 Mongo Database » Connecting mongo database...");
-    await mongoose.connect(`mongodb+srv://${config.db_host}`, connectOptions);
+    await mongoose.connect(`mongodb+srv://${config.DB_HOST}`, connectOptions);
     console.log(`💻 Mongo Database » Connected to '${mongoose.connection.name}' mongo database successfully!`);
   } catch (error: any) {
     console.error(error);

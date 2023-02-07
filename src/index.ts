@@ -29,7 +29,7 @@ const app: Application = express();
 
   app.use("/", routes);
 
-  http.createServer(app).listen(config.server_port, (): void => {
-    console.log(`${config.prefix} Server started on port ${config.server_port}!`);
+  http.createServer(app).listen(config.PORT, (): void => {
+    console.log(`${config.PREFIX} Server started on port ${config.PORT}!`);
   });
 })();

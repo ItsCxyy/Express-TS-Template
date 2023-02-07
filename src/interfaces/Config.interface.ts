@@ -1,10 +1,10 @@
 export interface Config {
-  server_port: number,
-  version: string,
-  prefix: string,
-  db_host: string,
-  db_user: string,
-  db_password: string,
-  db_database: string,
-  db_collection: string,
+  PORT: number,
+  VERSION: string,
+  PREFIX: string,
+  DB_HOST: string,
+  DB_USER: string,
+  DB_PASSWORD: string,
+  DB_NAME: string,
+  DB_COLLECTION: string,
 }
