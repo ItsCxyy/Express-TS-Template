@@ -11,8 +11,8 @@ import { config } from "./config";
 
 const app: Application = express();
 
-(async () => {
-  //await initDatabaseSetup();
+(async (): Promise<void> => {
+  await initDatabaseSetup();
 
   app.use(
     cors({
